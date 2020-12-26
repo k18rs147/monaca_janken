@@ -77,10 +77,10 @@
         JankenScore.order(key, true).fetch()
         .then(function(result){
           high_score = result.get(key);
-          $("#highscore").html("ハイスコア：" + high_score + "連勝");
+          $("#highscore").html("ハイスコア：" + high_score + "連覇");
         })
         .catch(function(error){
-          $("#highscore").html("ハイスコア：" + high_score + "連勝");
+          $("#highscore").html("ハイスコア：" + high_score + "連覇");
         });
   
         win_num = 0;
@@ -93,7 +93,7 @@
       }
 
       function gameover() {
-        let msg = "GAME OVER<br>";
+        let msg = "残念ながら敗退<br>";
         if(win_num>0) {
           JankenScore.order(key, true).fetch()
           .then(function(result){
