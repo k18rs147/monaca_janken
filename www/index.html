@@ -124,6 +124,13 @@
       $(function(){
         newgame();
       })
+
+      //クリロナの反応      
+    // ButtonRがクリックされた時の処理
+    function btnRClick(){
+        target = document.getElementById("output");
+        target.innerHTML= "ロナウドはレバンドフスキをにらめつけだ";
+    }           
     </script>
 </head>
 <body>
@@ -139,6 +146,11 @@
   <div id="result" class="text-white bg-secondary">
   </div>
   <div id="result2" class="bg-warning">
+  </div>
+  <div>
+   <input type="button" value="クリロナ"onclick="btnRClick();"/>
+   <br/> <br/>
+   <div id="output"></div>        
   </div>
 </body>
 </html>
