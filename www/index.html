@@ -130,7 +130,13 @@
     function btnRClick(){
         target = document.getElementById("output");
         target.innerHTML= "ロナウドはレバンドフスキをにらめつけだ";
-    }           
+    }
+    
+    var s = 0;
+    function countSecond() {
+	  s++;
+	  document.getElementById("sample1").innerHTML = "プレイ時間"+s+"秒"+"経過";
+    }               
     </script>
 </head>
 <body>
@@ -150,7 +156,9 @@
   <div>
    <input type="button" value="クリロナ"onclick="btnRClick();"/>
    <br/> <br/>
-   <div id="output"></div>        
+   <div id="output"></div>
+   <div id="sample1">
+   <button onclick="setInterval('countSecond()',1000)">秒数カウントを開始</button>        
   </div>
 </body>
 </html>
