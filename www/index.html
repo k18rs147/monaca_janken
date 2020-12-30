@@ -128,21 +128,21 @@
       //クリロナの反応      
     // ButtonRがクリックされた時の処理
     function btnRClick(){
-        target = document.getElementById("output");
-        target.innerHTML= "ロナウドはレバンドフスキをにらめつけだ";
+        target = document.getElementById("action");
+        target.innerHTML= "ロナウドはレバンドフスキをにらめつけた<br>スポーツマンシップに反する行いと批判を浴びた<br>";
     }
     
     var s = 0;
     function countSecond() {
 	  s++;
-	  document.getElementById("sample1").innerHTML = "プレイ時間"+s+"秒"+"経過";
+	  document.getElementById("time").innerHTML = "プレイ時間"+s+"秒"+"経過";
     }               
     </script>
 </head>
 <body>
   <h1 class="text-white bg-primary">best player</h1>
   <div id="highscore" class="text-white bg-secondary"></div>
-  <div class="mx-auto" style="width: 200px">
+  <div class="mx-auto" style="width: 500px">
     <a onclick="gu();" class="btn btn-outline-primary hand" role="button">messi
     </a>
     <a onclick="choki();" class="btn btn-outline-primary hand" role="button">ronaldo</a>
@@ -156,9 +156,12 @@
   <div>
    <input type="button" value="クリロナ"onclick="btnRClick();"/>
    <br/> <br/>
-   <div id="output"></div>
-   <div id="sample1">
-   <button onclick="setInterval('countSecond()',1000)">秒数カウントを開始</button>        
+   <div id="action"></div>
+   <div id="time">
+   <button onclick="setInterval('countSecond()',1000)">やりすぎは注意してください。</button>
+  </div>
+  <div id ="concept">
+ <p> 概要：現地時間12月17日スイスのチューリヒで<br>2020FIFA年間表彰式<br>「ザ・ベスト・FIFAフットボールアウォーズ」が開催された</p>
   </div>
 </body>
 </html>

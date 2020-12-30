@@ -1,12 +1,20 @@
 /**/
-#output{
+#action{
   color: red;
   font-style: italic;
 }
 
-#sample1{
+#time{
   color: gray;
   position:absolute; 
   bottom:10px; 
   right:10px;
 }
+
+#concept{
+  color: black;
+  position:absolute; 
+  bottom:50px; 
+  right:10px;
+}
+
