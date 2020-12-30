@@ -131,12 +131,23 @@
         target = document.getElementById("action");
         target.innerHTML= "ロナウドはレバンドフスキをにらめつけた<br>スポーツマンシップに反する行いと批判を浴びた<br>";
     }
-    
+
+   //やりすぎは注意してください。を押された時の処理 
     var s = 0;
     function countSecond() {
 	  s++;
 	  document.getElementById("time").innerHTML = "プレイ時間"+s+"秒"+"経過";
-    }               
+    }
+    
+   //現在時刻
+   var time= new Date();
+
+   //時・分・秒を取得
+   var hour = time.getHours();
+   var minute = time.getMinutes();
+   var second = time.getSeconds();
+
+   document.write('<span class="zikoku">現在時刻：</span>'+hour+"時",+minute+"分"+second+"秒");
     </script>
 </head>
 <body>
